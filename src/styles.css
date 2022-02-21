@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  overflow-x: hidden;
+  height: 100vw;
+}
+
+.lighter-grey {
+  background-color: #4e4f51;
+}
+
+.light-grey {
+  background-color: #1b1a1d;
+}
+
+.grey {
+  background-color: #1a1c1e;
+}
+
+.red {
+  background-color: #ac3639;
+}
+
+.green {
+  background-color: #83c17f;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  /* //TODO change this */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-container {
+  margin: 20px;
+  padding: 20px;
+  width: 60%;
+  border-radius: 20px;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  border: 1px solid #2b2d35;
+}
+
+.search-container:focus {
+  outline: 0px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance-review-container {
+  margin: 20px;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  text-align: left;
+  display: flex;
+}
+
+.balance-info {
+  width: 50%;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-wrapper button {
+  color: white;
+  border: none;
+  padding: 15px 40px 15px 40px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.table-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+td {
+  border-right: none;
+  border-left: none;
+}
+
+tr:nth-child(even) {
+  background-color: #1a1c1e;
+}
+
+th {
+  background-color: #1a1c1e;
+}
+
+.transaction-form {
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.transaction-form button {
+  background-color: rgba(98, 0, 255, 0.788);
+  border-radius: 10px;
+}
+
+.transaction-form input {
+  border-radius: 10px;
+  border: none;
+  padding: 20px 10px 20px 10px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.transaction-form label {
+  margin: 10px;
+}
+
+.filter-container {
+  display: flex;
+}
+
+.filter-name {
+  color: #3e3d41;
+}

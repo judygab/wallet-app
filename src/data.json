@@ -1,0 +1,24 @@
+{
+  "transactions": [
+    {
+      "name": "Food",
+      "amount": "300",
+      "date": "22/11/21",
+      "category": "Food"
+    },
+    {
+      "name": "Flight",
+      "amount": "1000",
+      "date": "22/10/21",
+      "category": "Travel"
+    },
+    {
+      "name": "Groceries",
+      "amount": "100",
+      "date": "22/11/20",
+      "category": "Bills"
+    }
+  ],
+  "balance": 5000,
+  "categories": ["Travel", "Food", "Groceries"]
+}
