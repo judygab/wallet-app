@@ -32,22 +32,6 @@ export default function App() {
           onChange={(e) => setSearchText(e.target.value)}
         />
         <Filter title="Category" value="category" options={data.categories} onHandleChange={onHandleChange}/>
-        <div className="filters">
-          {/* <label>
-            Category
-            <select value={category} onChange={(e) => onHandleChange(e)}>
-              <option value="1">Category 1</option>
-              <option value="2">Category 2</option>
-            </select>
-          </label>
-          <label>
-            Currency
-            <select value={category} onChange={(e) => onHandleChange(e)}>
-              <option value="1">USD</option>
-              <option value="2">USD@</option>
-            </select>
-          </label> */}
-        </div>
       </form>
       <Transactions
         data={sortBy === "" ? data : data.sort((a, b) => a[sortBy] - b[sortBy])}

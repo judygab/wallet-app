@@ -115,6 +115,10 @@ tr:nth-child(even) {
   background-color: #1a1c1e;
 }
 
+th, td {
+  padding: 10px;
+}
+
 th {
   background-color: #1a1c1e;
 }
@@ -148,8 +152,18 @@ th {
 
 .filter-container {
   display: flex;
+  margin: 20px;
 }
 
 .filter-name {
   color: #3e3d41;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.filter-select {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
 }

@@ -3,7 +3,7 @@ const Filter = ({ title, value, options, onHandleChange }) => {
   return (
     <div className="filter-container">
       <div className="filter-name">{title}</div>
-      <select onChange={(e) => onHandleChange(value, e)}>
+      <select className="filter-select grey" onChange={(e) => onHandleChange(value, e)}>
         <option value='Select All' key='Select All'>Select All</option>
         {options.map((option) => {
           return (
@@ -11,7 +11,7 @@ const Filter = ({ title, value, options, onHandleChange }) => {
               {option}
             </option>
           );
-        })}Filt
+        })}
       </select>
     </div>
   );
