@@ -180,6 +180,17 @@ th {
   margin: 0 10px;
 }
 
-.pagination-container {
+.pagination-container, .filters-container {
   display: flex;
+}
+
+.modify-search-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+
+.pagination-container {
+  align-items: center;
 }

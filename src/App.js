@@ -59,8 +59,13 @@ export default function App() {
           onChange={(e) => setSearchText(e.target.value)}
         />
       </form>
-      <Filter title="Category" value="category" options={data.categories} onHandleChange={onHandleChange}/>
-      <Pagination page={page} total={total} onPageUpdate={onPageUpdate} />
+      <div className="modify-search-container">
+        <div className="filters-container">
+          <Filter title="Category" value="category" options={data.categories} onHandleChange={onHandleChange}/>
+          <Filter title="Year" value="year" options={data.years} onHandleChange={onHandleChange}/>
+        </div>
+        <Pagination page={page} total={total} onPageUpdate={onPageUpdate} />
+      </div>
       <Transactions
         transactions={sortBy === "" ? transactions.slice(resultsPerPage * page, resultsPerPage * (page + 1)) : transactions.sort((a, b) => a[sortBy] - b[sortBy]).slice(resultsPerPage * page, resultsPerPage * (page + 1))}
         onSortByUpdate={onSortByUpdate}
