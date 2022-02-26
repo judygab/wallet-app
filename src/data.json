@@ -20,5 +20,6 @@
     }
   ],
   "balance": 5000,
-  "categories": ["Travel", "Food", "Groceries"]
+  "categories": ["Travel", "Food", "Groceries"],
+  "year": [2019, 2020, 2021, 2022]
 }

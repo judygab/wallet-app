@@ -14,6 +14,7 @@ export default function App() {
   const [page, setPage] = useState(0);
   const [total, setTotal] = useState(10);
   const [transactions, setTransactions] = useState([]);
+  const [resultsPerPage, setResultsPerPage] = useState(5);
 
   useEffect(() => {
     generateTransactions();
@@ -41,7 +42,9 @@ export default function App() {
     setSortBy(sort);
   };
 
-  const onPageUpdate = (page) => setPage(page)
+  const onPageUpdate = (page) => {
+    setPage(page)
+  }
 
   return (
     <div className="App">
@@ -59,7 +62,7 @@ export default function App() {
       <Filter title="Category" value="category" options={data.categories} onHandleChange={onHandleChange}/>
       <Pagination page={page} total={total} onPageUpdate={onPageUpdate} />
       <Transactions
-        transactions={sortBy === "" ? transactions : transactions.sort((a, b) => a[sortBy] - b[sortBy])}
+        transactions={sortBy === "" ? transactions.slice(resultsPerPage * page, resultsPerPage * (page + 1)) : transactions.sort((a, b) => a[sortBy] - b[sortBy]).slice(resultsPerPage * page, resultsPerPage * (page + 1))}
         onSortByUpdate={onSortByUpdate}
         filters={filters}
       />

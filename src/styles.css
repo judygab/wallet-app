@@ -172,3 +172,14 @@ th {
   border-radius: 4px;
   color: white;
 }
+
+.arrow {
+  background-color: #7674e2;
+  padding: 3px 7px;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.pagination-container {
+  display: flex;
+}
