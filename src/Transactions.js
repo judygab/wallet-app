@@ -1,7 +1,6 @@
 const COLUMNS = ["name", "amount", "date", "category"];
 
-const Transactions = ({ data, onSortByUpdate, filters }) => {
-  let transactions = data.transactions;
+const Transactions = ({ transactions, onSortByUpdate, filters }) => {
 
   // if filters are set, filter out the data
   if (Object.keys(filters).length > 0) {
@@ -30,7 +29,7 @@ const Transactions = ({ data, onSortByUpdate, filters }) => {
           </tr>
         </thead>
         <tbody>
-          {transactions.map((transaction) => {
+          {transactions && transactions.length > 0 && transactions.map((transaction) => {
             return (
               <tr>
                 <td width="20%">{transaction.name}</td>
